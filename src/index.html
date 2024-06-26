@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -7,16 +8,27 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
 
+    <div id="app">
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+      <form id="search-form" class="search-form">
 
+        <input type="text" id="search-input" placeholder="Search for images..." />
+        <button type="submit">Search</button>
 
-    <script type="module" src="./main.js"></script>
+      </form>
+
+      <div class="gallery" id="gallery"></div>
+    </div>
+
+    <button class="load-more hidden">Load more</button>
+
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./js/pixabay-api.js"></script>
+  <script type="module" src="./js/render-functions.js"></script>
+
   </body>
+
 </html>
