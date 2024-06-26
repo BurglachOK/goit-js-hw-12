@@ -2,6 +2,7 @@
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
+
 import axios from 'axios';
 
 const API_KEY = '44600770-5271dcefa2998f065a43d02ad';
